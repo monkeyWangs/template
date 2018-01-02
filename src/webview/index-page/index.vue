@@ -7,12 +7,17 @@
     import NavigateBar from '@u51/miox-ui-navigate-bar';
     import { Flex, FlexItem } from '@u51/miox-ui-flex';
     import { fetchUserInfo } from 'root/lib/service';
+    <% _.forEach(data.components, function(component){ %>
+    import {{component.name}} from '{{component.source}}'
+    <% }) %>
     // import { loggerHelper, PageA } from 'root/lib/logger';
 
     // @loggerHelper('PageA')
     @Component({
         components: {
-            layout: Layout,
+            <% _.forEach(data.components, function(component){ %>
+            {{component.name}},
+            <% }) %>
             icon: Icon,
             navigator: NavigateBar,
             flex: Flex,

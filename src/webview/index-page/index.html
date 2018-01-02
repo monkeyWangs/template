@@ -1,6 +1,9 @@
 <layout>
     <layout type="head">
         <navigator title="miox首页" @right="next" rightIcon="right"></navigator>
+        <% _.forEach(data.components, function(component){ %>
+        <<%- component.name %>> <%- component.data.desc %> </<%- component.name %>>
+        <% }) %>
     </layout>
     <layout type="body">
         <flex justify="center" align="center" style="height: 100%;">

@@ -1,11 +1,11 @@
 {
-  "name": "intranet-template",
+  "name": "template",
   "version": "1.0.5",
   "description": "运营活动基础模板",
   "main": "src/index.js",
   "author": {
-      "name": "王伟",
-      "email": "wangwei3@u51.com"
+    "name": "王伟",
+    "email": "wangwei3@u51.com"
   },
   "license": "MIT",
   "scripts": {
@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "@u51/miox-ui-ant-icon": "~0.0.2",
+    "@u51/miox-ui-button": "^0.0.4",
     "@u51/miox-ui-flex": "~0.0.1",
     "@u51/miox-ui-layout": "~0.0.4",
     "@u51/miox-ui-navigate-bar": "~0.0.6",
